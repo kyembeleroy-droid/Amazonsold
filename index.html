@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparatif de téléphones et accessoires populaires. Smartphones, coques, écouteurs et chargeurs sélectionnés pour leur qualité et leur prix sur Amazon.">
+    <title>Meilleurs téléphones & accessoires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Top Téléphones & Accessoires</h1>
+    <p>Les meilleurs choix au meilleur prix 📱</p>
+
+    <nav class="menu">
+        <button onclick="filtrerProduits('all')">Tous</button>
+        <button onclick="filtrerProduits('telephone')">Téléphones</button>
+        <button onclick="filtrerProduits('accessoire')">Accessoires</button>
+    </nav>
+</header>
+
+<input 
+  type="text"
+  id="recherche"
+  class="search"
+  placeholder="Rechercher un téléphone ou un accessoire..."
+  aria-label="Recherche de produits"
+  onkeyup="rechercherProduit()"
+/>
+
+<!-- CONTENEUR DES PRODUITS (JS GÉNÈRE LES CARTES) -->
+<main>
+    <div class="produits" id="produits"></div>
+
+    <!-- TEXTE SEO -->
+    <section class="seo">
+        <p>
+            Découvrez notre sélection de téléphones et accessoires populaires.
+            Smartphones Android, coques de protection, écouteurs et chargeurs
+            sélectionnés pour leur qualité et leur prix sur Amazon.
+        </p>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="profil">
+        <img src="images/profil.jpg" alt="Photo du créateur du site">
+        <p>
+            Créé par <strong>A. Kyembe</strong><br>
+            Passionné de tech & bons plans 📱
+        </p>
+    </div>
+
+    <p class="amazon-legal">
+        En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+    </p>
+
+    <p class="copyright">
+        © 2026 - Site d’affiliation Amazon
+    </p>
+</footer>
+
+<!-- JavaScript TOUJOURS À LA FIN -->
+<script src="produits.js"></script>
+</body>
+</html>
